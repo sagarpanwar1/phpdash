@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.5.1.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="main.js"></script>
+
+  <title></title>
+
+  <link href="login.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+</head>
+<body>
+
+<div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    -
+
+    <form class="login-form" action="logincodes.php" method="POST">
+      <input type="text" id="email" name="email" placeholder="username"/>
+      <input type="password" id="password" name="password" placeholder="password"/>
+      <button type="submit" onclick="validation();" name="submit">login</button>
+      <p class="message">Not registered? <a href="Register.html">Create an account</a></p>
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
